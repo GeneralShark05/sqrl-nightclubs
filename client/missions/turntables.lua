@@ -100,7 +100,7 @@ RegisterNetEvent('nightclubs:client:equiptmentStartMission', function(data)
     else
         MISSION_PROGRESS = true
         effectProgress = true
-        TriggerServerEvent('nightclubs:server:returnEnterance')
+        TriggerServerEvent('nightclubs:server:returnEntrance')
         for k, v in pairs(Config.EffectsMission.place) do
             QBCore.Functions.Notify('Go to the marked locations and pick up items', "primary")
             if tempData[Config.EffectsMission.place[k].name] == tostring(nil) then

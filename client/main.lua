@@ -146,7 +146,12 @@ RegisterNetEvent('nightclubs:client:sendMail', function()
     TriggerServerEvent('qb-phone:server:sendNewMail', {
         sender = 'Tony',
         subject = 'New Night Club',
-        message = 'Congrats on the new club. Here is some info, hed into the owners office by the computer to check all of the options to hire employees, get food, and upgrde equiptment. This industry can be very lucriticve. Best of luck, Tony',
+        message = [[
+        Congrats on the new club. Here is some info to get you started; 
+        head into the owner's office by the computer to check all of the options to hire employees, get food, and upgrade equipment. 
+        If your looking to save some extra cash, you can "acquire" suplpies through some less than legal means.  This industry can be very lucrative, if your willing to earn it. 
+        Best of luck,
+        Tony]],
     })
 end)
 
@@ -336,35 +341,35 @@ end)
 
 
 CreateThread(function()
-    local enterance = BoxZone:Create(
-        vector3(Config.Enterance['Blip'].coords.x, Config.Enterance['Blip'].coords.y, Config.Enterance['Blip'].coords.z),
+    local entrance = BoxZone:Create(
+        vector3(Config.Entrance['Blip'].coords),
         5.0,
         5.0, {
-            name = "enterance_zone",
-            heading = Config.Enterance['Blip'].coords.w,
-            minZ = Config.Enterance['Blip'].coords.z - 4,
-            maxZ = Config.Enterance['Blip'].coords.z + 4,
+            name = "entrance_zone",
+            heading = Config.Entrance['Blip'].coords.w,
+            minZ = Config.Entrance['Blip'].coords.z - 4,
+            maxZ = Config.Entrance['Blip'].coords.z + 4,
             offset = { 0.0, 0.0, 0.0 },
             scale = { 1.0, 1.0, 1.0 },
             debugPoly = false,
         })
 
-    enterance:onPlayerInOut(function(isPointInside, point)
+    entrance:onPlayerInOut(function(isPointInside, point)
         if isPointInside then
             TriggerServerEvent('nightclubs:server:getinfo')
             Wait(1000)
-            TriggerEvent('nightclubs:client:enteranceMenu', arg)
+            TriggerEvent('nightclubs:client:entranceMenu', arg)
         end
     end)
 
-    local starterBlip = AddBlipForCoord(Config.Enterance['Blip'].coords.x, Config.Enterance['Blip'].coords.y,
-        Config.Enterance['Blip'].coords.z)
-    SetBlipColour(starterBlip, Config.Enterance['Blip'].color)
+    local starterBlip = AddBlipForCoord(Config.Entrance['Blip'].coords.x, Config.Entrance['Blip'].coords.y,
+        Config.Entrance['Blip'].coords.z)
+    SetBlipColour(starterBlip, Config.Entrance['Blip'].color)
     SetBlipScale(starterBlip, .6)
-    SetBlipSprite(starterBlip, Config.Enterance['Blip'].sprite)
+    SetBlipSprite(starterBlip, Config.Entrance['Blip'].sprite)
     SetBlipDisplay(starterBlip, 2)
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentSubstringPlayerName(Config.Enterance['Blip'].name)
+    AddTextComponentSubstringPlayerName(Config.Entrance['Blip'].name)
     EndTextCommandSetBlipName(starterBlip)
 
     -- Zones

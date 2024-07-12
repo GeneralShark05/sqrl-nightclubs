@@ -27,15 +27,15 @@ end)
 RegisterNetEvent('nightclubs:server:getBucket', function()
     TriggerClientEvent('nightclubs:client:getBucket', source, GetPlayerRoutingBucket(source))
 end)
-RegisterNetEvent('nightclubs:server:returnEnterance', function()
+RegisterNetEvent('nightclubs:server:returnEntrance', function()
     for k, v in pairs(inside) do
         if source == inside[k] then
             inside[k] = nil
         end
     end
     SetPlayerRoutingBucket(source, 0)
-    SetEntityCoords(source, Config.Enterance['Blip'].coords.x, Config.Enterance['Blip'].coords.y,
-        Config.Enterance['Blip'].coords.z, false, false, false, false)
+    SetEntityCoords(source, Config.Entrance['Blip'].coords.x, Config.Entrance['Blip'].coords.y,
+        Config.Entrance['Blip'].coords.z, false, false, false, false)
 end)
 
 RegisterNetEvent('nightclubs:server:sendBucket', function(source, bucket)

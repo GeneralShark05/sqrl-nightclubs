@@ -31,10 +31,10 @@ local function buyObject(ClubData, dataType, category, name)
     TriggerServerEvent('nightclubs:server:buyObj', ClubData, dataType, category, name)
 end
 
-RegisterNetEvent('nightclubs:client:enteranceMenu', function(args)
+RegisterNetEvent('nightclubs:client:entranceMenu', function(args)
     lib.registerContext({
-        id = 'enterance_menu',
-        title = 'Enterance Menu',
+        id = 'entrance_menu',
+        title = 'Entrance Menu',
         options = {
             {
                 title = 'Buy, Enter, or Vist a Club',
@@ -70,7 +70,7 @@ RegisterNetEvent('nightclubs:client:enteranceMenu', function(args)
         }
     })
 
-    lib.showContext('enterance_menu')
+    lib.showContext('entrance_menu')
 end)
 
 RegisterNetEvent('nightclubs:client:leavemenu', function()
@@ -87,7 +87,7 @@ RegisterNetEvent('nightclubs:client:leavemenu', function()
                 icon = 'person-walking-arrow-right',
                 onSelect = function()
                     TriggerEvent('nightclubs:client:removeipl')
-                    TriggerServerEvent('nightclubs:server:returnEnterance')
+                    TriggerServerEvent('nightclubs:server:returnEntrance')
                 end,
             },
         }

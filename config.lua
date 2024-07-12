@@ -1,11 +1,11 @@
 Config = Config or {}
 
-Config.Enterance = {
+Config.Entrance = {
     ['Blip'] = {
         sprite = 614, -- https://docs.fivem.net/docs/game-references/blips/
-        color = 28, -- Color of blip https://docs.fivem.net/docs/game-references/blips/
+        color = 0, -- Color of blip https://docs.fivem.net/docs/game-references/blips/
         coords = vector4(371.28, 252.5, 103.01, 144.48),
-        name = 'Night Club Enterance'
+        name = 'Nightclub'
     }
 }
 
@@ -14,228 +14,228 @@ Config.ClubCoords = vector3(-1569.28, -3016.7, -74.41)
 Config.Price = {
     ['Base'] = 888000, -- Price to buy the club
     ['Upgrades'] = {
-        ['Name'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+        ['Name'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
             ['Galaxy'] = {
                 name = 'Int01_ba_clubname_01',
-                description = 'Name is Galaxy',
-                price = 25000
+                description = 'Change name to G△L△XY',
+                price = 33500
             },
-            ['Studio'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Studio'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_clubname_02',
-                description = 'Name is Studio',
-                price = 25000
+                description = 'Change name to Studio Los Santos',
+                price = 33500
             },
-            ['Omega'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Omega'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_clubname_03',
-                description = 'Name is Omega',
-                price = 25000
+                description = 'Change name to Omega',
+                price = 33500
             },
-            ['Technologie'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Technologie'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_clubname_04',
-                description = 'Name is Technologie',
-                price = 25000
+                description = 'Change name to Technologie',
+                price = 33500
             },
-            ['Gefangnis'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Gefangnis'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_clubname_05',
-                description = 'Name is Gefangnis',
-                price = 25000
+                description = 'Change name to Gefängnis',
+                price = 33500
             },
-            ['Misonette'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Misonette'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_clubname_06',
-                description = 'Name is Misonette',
-                price = 25000
+                description = 'Change name to Maisonette Los Santos',
+                price = 33500
             },
-            ['Tony'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Tony'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_clubname_07',
-                description = 'Name is Tony',
-                price = 25000
+                description = 'Change name to Tony\'s Fun House',
+                price = 33500
             },
-            ['Place'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Place'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_clubname_08',
-                description = 'Name is Place',
-                price = 25000
+                description = 'Change name to The Palace',
+                price = 33500
             },
-            ['Paradise'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Paradise'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_clubname_09',
-                description = 'Name is Paradise',
-                price = 25000
+                description = 'Change name to Paradise',
+                price = 33500
             },
         },
         ['Style'] = {
-            ['Traditional'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Traditional'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_Style01',
                 description = 'Traditional Style',
-                price = 15000
+                price = 175000 -- $175,000
             },
-            ['Edgy'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Edgy'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_Style02',
                 description = 'Edgy Style',
-                price = 15000
+                price = 225000 -- $225,000
             },
-            ['Glamerous'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Glamerous'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_Style03',
                 description = 'Glamerous Style',
-                price = 15000
+                price = 300000 -- $300,000
             },
         },
         ['Podium'] = {
-            ['Traditional'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Traditional'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_style01_podium',
                 description = 'Traditional Style',
-                price = 5000
+                price = 17500
             },
-            ['Edgy'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Edgy'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_style02_podium',
                 description = 'Edgy Style',
-                price = 5000
+                price = 22500
             },
-            ['Glamerous'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Glamerous'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_style03_podium',
                 description = 'Glamerous Style',
-                price = 5000
+                price = 30000
             },
         },
         ['Speakers'] = {
-            ['Basic'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Basic'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_equipment_setup',
                 description = 'Basic Speakers',
                 price = 5000
             },
-            ['Ultimate'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Ultimate'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_equipment_upgrade',
                 description = 'Ultimate Speakers',
-                price = 5000
+                price = 14250 -- $1,425,000
             },
         },
         ['Security'] = {
-            ['Basic'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Basic'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_security_upgrade',
                 description = 'Basic Security',
-                price = 3000
+                price = 69500 -- $695,000
             },
         },
         ['Turntables'] = {
-            ['Basic'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Basic'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_dj01',
                 description = 'Basic Turntables',
-                price = 3000
-            },
-            ['Upgraded'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
-                name = 'Int01_ba_dj02',
-                description = 'Upgraded Turntables',
-                price = 4000
-            },
-            ['Mega'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
-                name = 'Int01_ba_dj03',
-                description = 'Mega Turntables',
                 price = 5000
             },
-            ['Ultimate'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Upgraded'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                name = 'Int01_ba_dj02',
+                description = 'Upgraded Turntables',
+                price = 14250
+            },
+            ['Mega'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                name = 'Int01_ba_dj03',
+                description = 'Mega Turntables',
+                price = 23500
+            },
+            ['Ultimate'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_dj04',
                 description = 'Ultimate Turntables',
-                price = 6000
+                price = 32750
             },
         },
         ['Droplets'] = {
-            ['Yellow'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Yellow'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_01_Lights_01',
                 description = 'Yellow Droplets',
                 price = 5000
             },
-            ['White'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['White'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_02_Lights_01',
                 description = 'White Droplets',
                 price = 5000
             },
-            ['Purple'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Purple'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_03_Lights_01',
                 description = 'Purple Droplets',
                 price = 5000
             },
-            ['Cayn'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Cayn'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_04_Lights_01',
                 description = 'Cayn Droplets',
                 price = 5000
             },
         },
         ['Neons'] = {
-            ['Yellow'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Yellow'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_01_Lights_02',
                 description = 'Yellow Neons',
                 price = 5000
             },
-            ['White'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['White'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_02_Lights_02',
                 description = 'White Neons',
                 price = 5000
             },
-            ['Purple'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Purple'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_03_Lights_02',
                 description = 'Purple Neons',
                 price = 5000
             },
-            ['Cayn'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Cayn'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_04_Lights_02',
                 description = 'Cayn Neons',
                 price = 5000
             },
         },
         ['Bands'] = {
-            ['Yellow'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Yellow'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_01_Lights_03',
                 description = 'Yellow Bands',
                 price = 5000
             },
-            ['Green'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Green'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_02_Lights_03',
                 description = 'Green Bands',
                 price = 5000
             },
-            ['White'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['White'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_03_Lights_03',
                 description = 'White Bands',
                 price = 5000
             },
-            ['Cayn'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Cayn'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_04_Lights_03',
                 description = 'Cayn Bands',
                 price = 5000
             },
         },
         ['Lasers'] = {
-            ['Yellow'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Yellow'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_01_Lights_04',
                 description = 'Yellow Lasers',
                 price = 5000
             },
-            ['Green'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Green'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_02_Lights_04',
                 description = 'Green Lasers',
                 price = 5000
             },
-            ['White'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['White'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_03_Lights_04',
                 description = 'White Lasers',
                 price = 5000
             },
-            ['Purple'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['Purple'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'DJ_04_Lights_04',
                 description = 'Purple Lasers',
                 price = 5000
             },
         },
         ['Booze'] = {
-            ['1'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['1'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_booze_01',
                 description = 'Booze Type 1',
                 price = 5000
             },
-            ['2'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['2'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_booze_02',
                 description = 'Booze Type 2',
                 price = 5000
             },
-            ['3'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTING OR PRICE
+            ['3'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
                 name = 'Int01_ba_booze_03',
                 description = 'Booze Type 3',
                 price = 5000
