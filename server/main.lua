@@ -76,7 +76,7 @@ end)
 
 
 
-RegisterNetEvent('nightclubs:server:buy', function()
+RegisterNetEvent('nightclubs:server:buy', function(clubID)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     local ClubData = {}
@@ -106,9 +106,9 @@ RegisterNetEvent('nightclubs:server:buy', function()
     Employees['tenders'] = '0'
 
 
-    if Player.PlayerData.money.cash >= Config.Price['Base'] then
+    if Player.PlayerData.money.cash >= Config.Entrance[clubID].price then
         TriggerClientEvent('QBCore:Notify', src, 'Bought the club in cash', 'success')
-        Player.Functions.RemoveMoney('cash', Config.Price['Base'], "Bought Club")
+        Player.Functions.RemoveMoney('cash', Config.Entrance[clubID].price, "Bought Club")
         local data = json.encode(ClubData)
         local mission = json.encode(Missions)
         local employee = json.encode(Employees)
@@ -116,9 +116,9 @@ RegisterNetEvent('nightclubs:server:buy', function()
             { Player.PlayerData.citizenid, data, mission, employee })
         sendToClub(source)
         TriggerClientEvent('nightclubs:client:sendMail', src)
-    elseif Player.PlayerData.money.bank >= Config.Price['Base'] then
+    elseif Player.PlayerData.money.bank >= Config.Entrance[clubID].price then
         TriggerClientEvent('QBCore:Notify', src, 'Bought the club in bank', 'success')
-        Player.Functions.RemoveMoney('bank', Config.Price['Base'], "Bought Club")
+        Player.Functions.RemoveMoney('bank', Config.Entrance[clubID].price, "Bought Club")
         local data = json.encode(ClubData)
         local mission = json.encode(Missions)
         local employee = json.encode(Employees)

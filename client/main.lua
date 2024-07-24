@@ -7,7 +7,8 @@ local civs = {}
 MISSION_PROGRESS = false
 CLUB_OWNED = false
 local arg = {
-    owned = false
+    owned = false,
+    clubKey = 'lsia'
 }
 local upgradedone = false
 local bucket
@@ -342,13 +343,13 @@ end)
 
 CreateThread(function()
     local entrance = BoxZone:Create(
-        vector3(Config.Entrance['Blip'].coords),
+        Config.Entrance[arg.clubKey].coords.xyz,
         5.0,
         5.0, {
             name = "entrance_zone",
-            heading = Config.Entrance['Blip'].coords.w,
-            minZ = Config.Entrance['Blip'].coords.z - 4,
-            maxZ = Config.Entrance['Blip'].coords.z + 4,
+            heading = Config.Entrance[arg.clubKey].coords.w,
+            minZ = Config.Entrance[arg.clubKey].coords.z - 4,
+            maxZ = Config.Entrance[arg.clubKey].coords.z + 4,
             offset = { 0.0, 0.0, 0.0 },
             scale = { 1.0, 1.0, 1.0 },
             debugPoly = false,
@@ -362,14 +363,14 @@ CreateThread(function()
         end
     end)
 
-    local starterBlip = AddBlipForCoord(Config.Entrance['Blip'].coords.x, Config.Entrance['Blip'].coords.y,
-        Config.Entrance['Blip'].coords.z)
-    SetBlipColour(starterBlip, Config.Entrance['Blip'].color)
+    local starterBlip = AddBlipForCoord(Config.Entrance[arg.clubKey].coords.x, Config.Entrance[arg.clubKey].coords.y,
+        Config.Entrance[arg.clubKey].coords.z)
+    SetBlipColour(starterBlip, Config.Entrance[arg.clubKey].color)
     SetBlipScale(starterBlip, .6)
-    SetBlipSprite(starterBlip, Config.Entrance['Blip'].sprite)
+    SetBlipSprite(starterBlip, Config.Entrance[arg.clubKey].sprite)
     SetBlipDisplay(starterBlip, 2)
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentSubstringPlayerName(Config.Entrance['Blip'].name)
+    AddTextComponentSubstringPlayerName(Config.Entrance[arg.clubKey].name)
     EndTextCommandSetBlipName(starterBlip)
 
     -- Zones

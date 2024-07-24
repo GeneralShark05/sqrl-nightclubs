@@ -1,253 +1,365 @@
-Config = Config or {}
-
-Config.Entrance = {
-    ['Blip'] = {
+Config = {
+    Blip = {
         sprite = 614, -- https://docs.fivem.net/docs/game-references/blips/
-        color = 0, -- Color of blip https://docs.fivem.net/docs/game-references/blips/
-        coords = vector4(371.28, 252.5, 103.01, 144.48),
+        color = 0,    -- Color of blip https://docs.fivem.net/docs/game-references/blips/
         name = 'Nightclub'
-    }
-}
+    },
 
-Config.ClubCoords = vector3(-1569.28, -3016.7, -74.41)
-
-Config.Price = {
-    ['Base'] = 888000, -- Price to buy the club
-    ['Upgrades'] = {
-        ['Name'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-            ['Galaxy'] = {
-                name = 'Int01_ba_clubname_01',
-                description = 'Change name to G△L△XY',
-                price = 33500
-            },
-            ['Studio'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_clubname_02',
-                description = 'Change name to Studio Los Santos',
-                price = 33500
-            },
-            ['Omega'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_clubname_03',
-                description = 'Change name to Omega',
-                price = 33500
-            },
-            ['Technologie'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_clubname_04',
-                description = 'Change name to Technologie',
-                price = 33500
-            },
-            ['Gefangnis'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_clubname_05',
-                description = 'Change name to Gefängnis',
-                price = 33500
-            },
-            ['Misonette'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_clubname_06',
-                description = 'Change name to Maisonette Los Santos',
-                price = 33500
-            },
-            ['Tony'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_clubname_07',
-                description = 'Change name to Tony\'s Fun House',
-                price = 33500
-            },
-            ['Place'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_clubname_08',
-                description = 'Change name to The Palace',
-                price = 33500
-            },
-            ['Paradise'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_clubname_09',
-                description = 'Change name to Paradise',
-                price = 33500
-            },
+    ClubCoords = vector3(-1569.28, -3016.7, -74.41),
+    
+    Entrance = {
+        ['del-perro'] = {
+            coords = vector4(371.28, 252.5, 103.01, 144.48),
+            name = 'Nightclub', -- Del Perro	
+            price = 1645000,    -- $1,645,000
+            description = "This charming 20's-style building in Del Perro has just enough residual class to offer a post-ironic thrill when you turn it into a throbbing techno dungeon."
         },
-        ['Style'] = {
-            ['Traditional'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_Style01',
-                description = 'Traditional Style',
-                price = 175000 -- $175,000
-            },
-            ['Edgy'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_Style02',
-                description = 'Edgy Style',
-                price = 225000 -- $225,000
-            },
-            ['Glamerous'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_Style03',
-                description = 'Glamerous Style',
-                price = 300000 -- $300,000
-            },
+        ['vespucci'] = {
+            coords = vector4(371.28, 252.5, 103.01, 144.48),
+            name = 'Nightclub', -- Vespucci Canals
+            price = 1320000,    -- $1,320,000
+            description = "There's only one thing needed to push the Vespucci Canals into being more European than Europe, and that's a wildly pretentious and brutally overpriced nightclub set amid the ruins of once-profitable commerce and industry."
         },
-        ['Podium'] = {
-            ['Traditional'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_style01_podium',
-                description = 'Traditional Style',
-                price = 17500
-            },
-            ['Edgy'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_style02_podium',
-                description = 'Edgy Style',
-                price = 22500
-            },
-            ['Glamerous'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_style03_podium',
-                description = 'Glamerous Style',
-                price = 30000
-            },
+        ['strawberry'] = {
+            coords = vector4(371.28, 252.5, 103.01, 144.48),
+            name = 'Nightclub', -- Strawberry
+            price = 1525000,    -- $1,525,000
+            description = "One of the little-known perks of setting up a night club in a disused paint factory is the presence of high residual levels of industrial solvent. Good atmosphere, happy patrons, all night. guaranteed."
         },
-        ['Speakers'] = {
-            ['Basic'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_equipment_setup',
-                description = 'Basic Speakers',
-                price = 5000
-            },
-            ['Ultimate'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_equipment_upgrade',
-                description = 'Ultimate Speakers',
-                price = 14250 -- $1,425,000
-            },
+        ['lsia'] = {
+            coords = vector4(371.28, 252.5, 103.01, 144.48),
+            name = 'Nightclub', -- LSIA
+            price = 1135000,    -- $1,135,000
+            description =
+            "Imagine you're an international businessperson looking for a world-class night out, but you'd rather not stray too far from your private jet just in case the FIB hears you're on American soil. There's only one way to cater to that vital demographic, and this location is it.	"
         },
-        ['Security'] = {
-            ['Basic'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_security_upgrade',
-                description = 'Basic Security',
-                price = 69500 -- $695,000
-            },
+        ['mission-row'] = {
+            coords = vector4(371.28, 252.5, 103.01, 144.48),
+            name = 'Nightclub', -- Mission Row
+            price = 1440000,    -- $1,440,000
+            description = "A wise man once said that wealth is relative. And nothing will accentuate the astonishing wealth of your clientelle like stepping out for a cigarette and gazing at the highest concentration of vagrancy in the state.",
         },
-        ['Turntables'] = {
-            ['Basic'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_dj01',
-                description = 'Basic Turntables',
-                price = 5000
-            },
-            ['Upgraded'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_dj02',
-                description = 'Upgraded Turntables',
-                price = 14250
-            },
-            ['Mega'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_dj03',
-                description = 'Mega Turntables',
-                price = 23500
-            },
-            ['Ultimate'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_dj04',
-                description = 'Ultimate Turntables',
-                price = 32750
-            },
+        ['la-mesa'] = {
+            coords = vector4(371.28, 252.5, 103.01, 144.48),
+            name = 'Nightclub', -- La Mesa
+            price = 1500000,    -- $1,500,000
+            description = "As well as being walking distance for the young professionals in Mirror Park, this is also the only location in town where the roar of the interstate doubles as the world's biggest sub-woofer."
+    
         },
-        ['Droplets'] = {
-            ['Yellow'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_01_Lights_01',
-                description = 'Yellow Droplets',
-                price = 5000
-            },
-            ['White'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_02_Lights_01',
-                description = 'White Droplets',
-                price = 5000
-            },
-            ['Purple'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_03_Lights_01',
-                description = 'Purple Droplets',
-                price = 5000
-            },
-            ['Cayn'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_04_Lights_01',
-                description = 'Cayn Droplets',
-                price = 5000
-            },
+        ['cypress-flats'] = {
+            coords = vector4(371.28, 252.5, 103.01, 144.48),
+            name = 'Nightclub', -- Cypress Flats
+            price = 1370000,    -- $1,370,000
+            description =
+            "Cypress Flats is currently in that perfect sweet spot for a new club: it has barrels overflowing with post-industrial cool but very little housing, so there's nowhere for the hipsters to roost. This place is staying on the edge for years to come."
         },
-        ['Neons'] = {
-            ['Yellow'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_01_Lights_02',
-                description = 'Yellow Neons',
-                price = 5000
-            },
-            ['White'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_02_Lights_02',
-                description = 'White Neons',
-                price = 5000
-            },
-            ['Purple'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_03_Lights_02',
-                description = 'Purple Neons',
-                price = 5000
-            },
-            ['Cayn'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_04_Lights_02',
-                description = 'Cayn Neons',
-                price = 5000
-            },
+        ['west-vinewood'] = {
+            coords = vector4(371.28, 252.5, 103.01, 144.48),
+            name = 'Nightclub', -- West Vinewood	
+            price = 1700000,    -- $1,700,000
+            description = "It's hard to find a suitably scuzzy location in West Vinewood. This place was actually in pristine condition until we paid some drifters to live in it for a couple months: now it has all the character it needs, and then some."
         },
-        ['Bands'] = {
-            ['Yellow'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_01_Lights_03',
-                description = 'Yellow Bands',
-                price = 5000
-            },
-            ['Green'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_02_Lights_03',
-                description = 'Green Bands',
-                price = 5000
-            },
-            ['White'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_03_Lights_03',
-                description = 'White Bands',
-                price = 5000
-            },
-            ['Cayn'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_04_Lights_03',
-                description = 'Cayn Bands',
-                price = 5000
-            },
+        ['downtown-vinewood'] = {
+            coords = vector4(371.28, 252.5, 103.01, 144.48),
+            name = 'Nightclub', -- Downtown Vinewood
+            price = 1670000,    -- $1,670,000
+            description =
+            "Downtown Vinewood is the entertainment capital of Los Santos: Oriental Theater, Whirligig Theater, Doppler Cinema — and right in the heart of it. basking in all its abandoned commercial chic, there's a nightclub location with your name on it."
         },
-        ['Lasers'] = {
-            ['Yellow'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_01_Lights_04',
-                description = 'Yellow Lasers',
-                price = 5000
-            },
-            ['Green'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_02_Lights_04',
-                description = 'Green Lasers',
-                price = 5000
-            },
-            ['White'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_03_Lights_04',
-                description = 'White Lasers',
-                price = 5000
-            },
-            ['Purple'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'DJ_04_Lights_04',
-                description = 'Purple Lasers',
-                price = 5000
-            },
+        ['elysian-island'] = {
+            coords = vector4(371.28, 252.5, 103.01, 144.48),
+            name = 'Nightclub', -- Elysian Island	
+            price = 1080000,    -- $1,080,000
+            description =
+            "Forget homely blue-collar neighborhoods and picturesque abandoned factories. If you want a real challenge, try gentrifying a dockside slum that's knee-deep in industrial discharge and dead fish. If you can bring the A-listers here, you can bring them anywhere."
         },
-        ['Booze'] = {
-            ['1'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_booze_01',
-                description = 'Booze Type 1',
-                price = 5000
+    },
+    
+    Price = {
+        ['Base'] = 888000, -- Price to buy the club
+        ['Upgrades'] = {
+            ['Name'] = {   -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                id = 'buy_name_upgrades',
+                icon = 'signature',
+                items = {
+                    ['Galaxy'] = {
+                        name = 'Int01_ba_clubname_01',
+                        title = 'Change name to G△L△XY',
+                        price = 33500
+                    },
+                    ['Studio'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_clubname_02',
+                        title = 'Change name to Studio Los Santos',
+                        price = 33500
+                    },
+                    ['Omega'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_clubname_03',
+                        title = 'Change name to Omega',
+                        price = 33500
+                    },
+                    ['Technologie'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_clubname_04',
+                        title = 'Change name to Technologie',
+                        price = 33500
+                    },
+                    ['Gefangnis'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_clubname_05',
+                        title = 'Change name to Gefängnis',
+                        price = 33500
+                    },
+                    ['Maisonette'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_clubname_06',
+                        title = 'Change name to Maisonette Los Santos',
+                        price = 33500
+                    },
+                    ['Tony'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_clubname_07',
+                        title = 'Change name to Tony\'s Fun House',
+                        price = 33500
+                    },
+                    ['Palace'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_clubname_08',
+                        title = 'Change name to The Palace',
+                        price = 33500
+                    },
+                    ['Paradise'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_clubname_09',
+                        title = 'Change name to Paradise',
+                        price = 33500
+                    },
+                }
             },
-            ['2'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_booze_02',
-                description = 'Booze Type 2',
-                price = 5000
+            ['Style'] = {
+                id = 'buy_style_upgrades',
+                icon = 'paint-roller',
+                items = {
+                    ['Traditional'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_Style01',
+                        title = 'Traditional Style',
+                        description = "This is the kind of authenticity that's made out of nothing but solid concrete.",
+                        price = 175000 -- $175,000
+                    },
+                    ['Edgy'] = {   -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_Style02',
+                        title = 'Edgy Style',
+                        description = "Welcome to the world of possibilities: nothing is forbidden, but nothing is free.",
+                        price = 225000 -- $225,000
+                    },
+                    ['Glamerous'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_Style03',
+                        title = 'Glamerous Style',
+                        description = "It's amazing what can happen when your only guiding principles are limitless opulence, staggering elitism and the pursuit of overwhelming bodily pleasure.",
+                        price = 300000 -- $300,000
+                    },
+                }
             },
-            ['3'] = {-- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
-                name = 'Int01_ba_booze_03',
-                description = 'Booze Type 3',
-                price = 5000
+            ['Podium'] = {
+                id = 'buy_podium_upgrades',
+                icon = 'chair',
+                items = {
+                    ['Traditional'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_style01_podium',
+                        title = 'Traditional Style',
+                        price = 17500
+                    },
+                    ['Edgy'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_style02_podium',
+                        title = 'Edgy Style',
+                        price = 22500
+                    },
+                    ['Glamerous'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_style03_podium',
+                        title = 'Glamerous Style',
+                        price = 30000
+                    },
+                }
             },
-        },
+            ['Speakers'] = {
+                id = 'buy_speakers_upgrades',
+                icon = 'headphones',
+                items = {
+                    ['Basic'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_equipment_setup',
+                        title = 'Basic Speakers',
+                        price = 5000
+                    },
+                    ['Ultimate'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_equipment_upgrade',
+                        title = 'Ultimate Speakers',
+                        price = 14250 -- $1,425,000
+                    },
+                }
+            },
+            ['Security'] = {
+                id = 'buy_security_upgrades',
+                icon = 'lock',
+                items = {
+                    ['Basic'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_security_upgrade',
+                        title = 'Basic Security',
+                        price = 69500 -- $695,000
+                    },
+                }
+            },
+            ['Turntables'] = {
+                id = 'buy_turntables_upgrade',
+                icon = 'music',
+                items = {
+                    ['Basic'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_dj01',
+                        title = 'Basic Turntables',
+                        price = 5000
+                    },
+                    ['Upgraded'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_dj02',
+                        title = 'Upgraded Turntables',
+                        price = 14250
+                    },
+                    ['Mega'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_dj03',
+                        title = 'Mega Turntables',
+                        price = 23500
+                    },
+                    ['Ultimate'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_dj04',
+                        title = 'Ultimate Turntables',
+                        price = 32750
+                    },
+                }
+            },
+            ['Droplets'] = {
+                id = 'buy_droplets_upgrades',
+                icon = 'lightbulb',
+                items = {
+                    ['Yellow'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_01_Lights_01',
+                        title = 'Yellow Droplets',
+                        price = 5000
+                    },
+                    ['White'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_02_Lights_01',
+                        title = 'White Droplets',
+                        price = 5000
+                    },
+                    ['Purple'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_03_Lights_01',
+                        title = 'Purple Droplets',
+                        price = 5000
+                    },
+                    ['Cayn'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_04_Lights_01',
+                        title = 'Cayn Droplets',
+                        price = 5000
+                    },
+                }
+            },
+            ['Neons'] = {
+                id = 'buy_neons_upgrade',
+                icon = 'lightbulb',
+                items = {
+                    ['Yellow'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_01_Lights_02',
+                        title = 'Yellow Neons',
+                        price = 5000
+                    },
+                    ['White'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_02_Lights_02',
+                        title = 'White Neons',
+                        price = 5000
+                    },
+                    ['Purple'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_03_Lights_02',
+                        title = 'Purple Neons',
+                        price = 5000
+                    },
+                    ['Cayn'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_04_Lights_02',
+                        title = 'Cayn Neons',
+                        price = 5000
+                    },
+                }
+            },
+            ['Bands'] = {
+                id = 'buy_bands_upgrades',
+                icon = 'lightbulb',
+                items = {
+                    ['Yellow'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_01_Lights_03',
+                        title = 'Yellow Bands',
+                        price = 5000
+                    },
+                    ['Green'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_02_Lights_03',
+                        title = 'Green Bands',
+                        price = 5000
+                    },
+                    ['White'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_03_Lights_03',
+                        title = 'White Bands',
+                        price = 5000
+                    },
+                    ['Cayn'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_04_Lights_03',
+                        title = 'Cayn Bands',
+                        price = 5000
+                    },
+                }
+            },
+            ['Lasers'] = {
+                id = 'buy_lasers_upgrades',
+                icon = 'lightbulb',
+                items = {
+                    ['Yellow'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_01_Lights_04',
+                        title = 'Yellow Lasers',
+                        price = 5000
+                    },
+                    ['Green'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_02_Lights_04',
+                        title = 'Green Lasers',
+                        price = 5000
+                    },
+                    ['White'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_03_Lights_04',
+                        title = 'White Lasers',
+                        price = 5000
+                    },
+                    ['Purple'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'DJ_04_Lights_04',
+                        title = 'Purple Lasers',
+                        price = 5000
+                    },
+                }
+            },
+            ['Booze'] = {
+                id = 'buy_booze_upgrades',
+                icon = 'beer-mug-empty',
+                items = {
+                    ['1'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_booze_01',
+                        title = 'Booze Type 1',
+                        price = 5000
+                    },
+                    ['2'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_booze_02',
+                        title = 'Booze Type 2',
+                        price = 5000
+                    },
+                    ['3'] = { -- DO NOT EDIT ANYTHING BUT DESCRIPTION OR PRICE
+                        name = 'Int01_ba_booze_03',
+                        title = 'Booze Type 3',
+                        price = 5000
+                    },
+                }
+            },
+        }
     }
 }
 
 Config.PosterMission = {
     blip = {
         sprite = 397, -- https://docs.fivem.net/docs/game-references/blips/
-        color = 66, -- Blip color
+        color = 66,   -- Blip color
         name = 'Poster Location'
     },
     place = { -- Where they will have toput up posters for the missions, this affects popularity
@@ -324,10 +436,10 @@ Config.FoodMission = { -- Has to get food otherwise populatity will go down
         color = 66,
         name = 'Points of Interest - Food'
     },
-    max = 50, -- Max amount off ood
+    max = 50,    -- Max amount off ood
     remove = 15, -- Food that is removed every day at spefied time
-    min = 25, -- Minimum food needed to get full popularity 
-    time = 23, -- Time food is removed
+    min = 25,    -- Minimum food needed to get full popularity
+    time = 23,   -- Time food is removed
     locations = {
         [1] = { coords = vector4(924.59, -1559.79, 30.75, 265.08) },
         [2] = { coords = vector4(792.07, -735.6, 27.5, 263.87) },
@@ -342,14 +454,14 @@ Config.FoodMission = { -- Has to get food otherwise populatity will go down
 }
 
 Config.Employee = {
-    dj = { -- Dj employee
+    dj = {            -- Dj employee
         locations = { -- Where they will spawn
             [1] = { coords = vector4(-1602.77, -3012.52, -77.8, 264.6) },
         },
         model = 'ig_sol', -- https://docs.fivem.net/docs/game-references/ped-models/
         animdict = 'anim@amb@nightclub@djs@solomun@',
         clip = 'sol_dance_l_sol',
-        price = 12, -- Price per hour
+        price = 12,     -- Price per hour
         hoursworked = 7 -- How many hours will be paid out, will affect profits
 
     },
@@ -374,7 +486,7 @@ Config.Employee = {
         model = 's_f_y_bartender_01', -- https://docs.fivem.net/docs/game-references/ped-models/
         animdict = 'anim@amb@clubhouse@bar@drink@idle_a',
         clip = 'idle_a_bartender',
-        price = 13, -- Price per hour
+        price = 13,     -- Price per hour
         hoursworked = 7 -- How many hours will be paid out, will affect profits
     }
 }
@@ -433,194 +545,194 @@ Config.PedSpawns = {
         [50] = { coords = vector4(-1591.06, -3009.99, -76.0, 83.37) },
     },
     anims = { -- Animations for clubs, edit more or less
-        [1] = { 
+        [1] = {
             dict = 'anim@amb@nightclub@dancers@podium_dancers@',
-            clip = 'hi_dance_facedj_17_v2_male^5' 
+            clip = 'hi_dance_facedj_17_v2_male^5'
         },
-        [2] = { 
+        [2] = {
             dict = 'anim@amb@nightclub@mini@dance@dance_solo@male@var_b@',
-            clip = 'high_center_down' 
-        }, 
-        [3] = { 
+            clip = 'high_center_down'
+        },
+        [3] = {
             dict = 'anim@amb@nightclub@mini@dance@dance_solo@male@var_a@',
-            clip = 'high_center' 
-        }, 
-        [4] = { 
+            clip = 'high_center'
+        },
+        [4] = {
             dict = 'anim@amb@nightclub@mini@dance@dance_solo@male@var_b@',
-            clip = 'high_center_up' 
-        }, 
-        [5] = { 
+            clip = 'high_center_up'
+        },
+        [5] = {
             dict = 'anim@amb@casino@mini@dance@dance_solo@female@var_a@',
-            clip = 'med_center' 
-        }, 
-        [6] = { 
+            clip = 'med_center'
+        },
+        [6] = {
             dict = 'misschinese2_crystalmazemcs1_cs',
-            clip = 'dance_loop_tao' 
-        }, 
-        [7] = { 
+            clip = 'dance_loop_tao'
+        },
+        [7] = {
             dict = 'misschinese2_crystalmazemcs1_ig',
-            clip = 'dance_loop_tao' 
-        }, 
-        [8] = { 
+            clip = 'dance_loop_tao'
+        },
+        [8] = {
             dict = 'missfbi3_sniping',
             clip = 'dance_m_default'
-        }, 
-        [9] = { 
+        },
+        [9] = {
             dict = 'anim@amb@nightclub@mini@dance@dance_solo@female@var_a@',
-            clip = 'med_center_up' 
-        }, 
-        [10] = { 
+            clip = 'med_center_up'
+        },
+        [10] = {
             dict = 'anim@amb@nightclub_island@dancers@beachdance@',
-            clip = 'hi_idle_a_m03' 
-        }, 
-        [11] = { 
+            clip = 'hi_idle_a_m03'
+        },
+        [11] = {
             dict = 'anim@amb@nightclub_island@dancers@beachdance@',
-            clip = 'hi_idle_a_m05' 
-        }, 
-        [12] = { 
+            clip = 'hi_idle_a_m05'
+        },
+        [12] = {
             dict = 'anim@amb@nightclub_island@dancers@beachdance@',
-            clip = 'hi_idle_a_m02' 
-        }, 
-        [13] = { 
+            clip = 'hi_idle_a_m02'
+        },
+        [13] = {
             dict = 'anim@amb@nightclub_island@dancers@beachdance@',
-            clip = 'hi_idle_b_f01' 
-        }, 
-        [14] = { 
+            clip = 'hi_idle_b_f01'
+        },
+        [14] = {
             dict = 'anim@amb@nightclub_island@dancers@club@',
-            clip = 'hi_idle_a_f02' 
-        }, 
-        [15] = { 
+            clip = 'hi_idle_a_f02'
+        },
+        [15] = {
             dict = 'anim@amb@nightclub_island@dancers@club@',
-            clip = 'hi_idle_b_m03' 
-        }, 
-        [16] = { 
+            clip = 'hi_idle_b_m03'
+        },
+        [16] = {
             dict = 'anim@amb@nightclub_island@dancers@club@',
-            clip = 'hi_idle_d_f01' 
-        }, 
-        [17] = { 
+            clip = 'hi_idle_d_f01'
+        },
+        [17] = {
             dict = 'anim@amb@nightclub_island@dancers@crowddance_facedj@',
-            clip = 'mi_dance_facedj_17_v2_male^4' 
-        }, 
-        [18] = { 
+            clip = 'mi_dance_facedj_17_v2_male^4'
+        },
+        [18] = {
             dict = 'anim@amb@nightclub_island@dancers@club@',
-            clip = 'hi_idle_d_f01' 
-        }, 
-        [19] = { 
+            clip = 'hi_idle_d_f01'
+        },
+        [19] = {
             dict = 'anim@amb@nightclub_island@dancers@crowddance_facedj@',
-            clip = 'mi_dance_facedj_17_v2_male^4' 
-        }, 
-        [20] = { 
+            clip = 'mi_dance_facedj_17_v2_male^4'
+        },
+        [20] = {
             dict = 'anim@amb@nightclub_island@dancers@crowddance_single_props@',
-            clip = 'mi_dance_prop_13_v1_male^3' 
-        }, 
+            clip = 'mi_dance_prop_13_v1_male^3'
+        },
     },
     models = { -- Models for npcs within the club https://docs.fivem.net/docs/game-references/ped-models/
-        [1] = { hash = 'ig_fabien'},
-        [2] = { hash = 'ig_hao'},
-        [3] = { hash = 'ig_jimmyboston'},
-        [4] = { hash = 'ig_ramp_hic'},
-        [5] = { hash = 'u_f_y_dancerave_01'},
-        [6] = { hash = 'u_f_y_danceburl_01'},
-        [7] = { hash = 'u_f_y_lauren'},
-        [8] = { hash = 'u_f_y_taylor'},
-        [9] = { hash = 'u_f_o_eileen'},
-        [10] = { hash = 'u_f_y_bikerchic'},
-        [11] = { hash = 'u_m_y_gabriel'},
-        [12] = { hash = 'u_m_y_smugmech_01'},
-        [13] = { hash = 'u_m_y_paparazzi'},
-        [14] = { hash = 'u_m_m_aldinapoli'},
-        [15] = { hash = 'u_m_m_curtis'},
-        [16] = { hash = 'cs_ashley'},
-        [17] = { hash = 'cs_lazlow'},
-        [18] = { hash = 'cs_mrsphillips'},
-        [19] = { hash = 'cs_tracydisanto'},
-        [20] = { hash = 'csb_anita'},
+        [1] = { hash = 'ig_fabien' },
+        [2] = { hash = 'ig_hao' },
+        [3] = { hash = 'ig_jimmyboston' },
+        [4] = { hash = 'ig_ramp_hic' },
+        [5] = { hash = 'u_f_y_dancerave_01' },
+        [6] = { hash = 'u_f_y_danceburl_01' },
+        [7] = { hash = 'u_f_y_lauren' },
+        [8] = { hash = 'u_f_y_taylor' },
+        [9] = { hash = 'u_f_o_eileen' },
+        [10] = { hash = 'u_f_y_bikerchic' },
+        [11] = { hash = 'u_m_y_gabriel' },
+        [12] = { hash = 'u_m_y_smugmech_01' },
+        [13] = { hash = 'u_m_y_paparazzi' },
+        [14] = { hash = 'u_m_m_aldinapoli' },
+        [15] = { hash = 'u_m_m_curtis' },
+        [16] = { hash = 'cs_ashley' },
+        [17] = { hash = 'cs_lazlow' },
+        [18] = { hash = 'cs_mrsphillips' },
+        [19] = { hash = 'cs_tracydisanto' },
+        [20] = { hash = 'csb_anita' },
     }
 }
 -- must add up to 100%
 Config.PedPercentage = {
-    food = .13, -- Food under its minimum, Config.FoodMission.min
-    employee = { -- percentage per number of people, 4 tenders is 4 x .09 which is .36
-        dj = .23, -- Up to 1 dj
-        dancers = .12, -- Up to 2 dancers (times percentage by amount)
-        tenders = .09, -- Up to 4 bar tenders (times percentage by amount)
+    food = .13,         -- Food under its minimum, Config.FoodMission.min
+    employee = {        -- percentage per number of people, 4 tenders is 4 x .09 which is .36
+        dj = .23,       -- Up to 1 dj
+        dancers = .12,  -- Up to 2 dancers (times percentage by amount)
+        tenders = .09,  -- Up to 4 bar tenders (times percentage by amount)
     },
     postermission = .05 -- Can complete up to 3 times (times percentage by amount)
 }
 
 Config.Earnings = {
-    time = 10, -- 10 Am Pay every day
-    food = 8, -- Cost of food, times by Config.FoodMission.remove
+    time = 10,      -- 10 Am Pay every day
+    food = 8,       -- Cost of food, times by Config.FoodMission.remove
     admission = 20, -- Cost of admission for npcs, times by percentage of npcs admited through above
     upgrades = {
         [1] = {
             name = 'name', -- Dont touch
-            bonus = true, -- Do you want bonus to apply for this category
-            types = { -- What objects will give bonus and how much it will, add more
-                [1] = {name = 'Int01_ba_clubname_09', amount = 200},
+            bonus = true,  -- Do you want bonus to apply for this category
+            types = {      -- What objects will give bonus and how much it will, add more
+                [1] = { name = 'Int01_ba_clubname_09', amount = 200 },
             }
         },
         [2] = {
             name = 'style',
             bonus = true,
             types = {
-                [1] = {name = 'Int01_ba_Style03', amount = 200},
+                [1] = { name = 'Int01_ba_Style03', amount = 200 },
             }
         },
         [3] = {
             name = 'podium',
             bonus = true,
             types = {
-                [1] = {name = 'Int01_ba_style03_podium', amount = 500},
+                [1] = { name = 'Int01_ba_style03_podium', amount = 500 },
             }
         },
         [4] = {
             name = 'security',
             bonus = true,
             types = {
-                [1] = {name = 'Int01_ba_security_upgrade', amount = 500},
+                [1] = { name = 'Int01_ba_security_upgrade', amount = 500 },
             }
         },
         [5] = {
             name = 'turntables',
             bonus = true,
             types = {
-                [1] = {name = 'Int01_ba_dj04', amount = 600},
+                [1] = { name = 'Int01_ba_dj04', amount = 600 },
             }
         },
         [6] = {
             name = 'droplets',
             bonus = true,
             types = {
-                [1] = {name = 'DJ_04_Lights_01', amount = 500},
+                [1] = { name = 'DJ_04_Lights_01', amount = 500 },
             }
         },
         [7] = {
             name = 'neons',
             bonus = true,
             types = {
-                [1] = {name = 'DJ_04_Lights_02', amount = 500},
+                [1] = { name = 'DJ_04_Lights_02', amount = 500 },
             }
         },
         [8] = {
             name = 'bands',
             bonus = true,
             types = {
-                [1] = {name = 'DJ_04_Lights_03', amount = 500},
+                [1] = { name = 'DJ_04_Lights_03', amount = 500 },
             }
         },
         [9] = {
             name = 'lasers',
             bonus = true,
             types = {
-                [1] = {name = 'DJ_04_Lights_04', amount = 500},
+                [1] = { name = 'DJ_04_Lights_04', amount = 500 },
             }
         },
         [10] = {
             name = 'booze',
             bonus = true,
             types = {
-                [1] = {name = 'Int01_ba_booze_03', amount = 500},
+                [1] = { name = 'Int01_ba_booze_03', amount = 500 },
             }
         }
     }
